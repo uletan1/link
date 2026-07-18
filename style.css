@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("image/新アイコン 背景のみver.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px) brightness(0.4) grayscale(0.3);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.profile {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile__icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+}
+
+.profile__name {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links {
+  list-style: none;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.links__link:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.links__icon {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+}
+
+.links__icon svg {
+  width: 100%;
+  height: 100%;
+}
