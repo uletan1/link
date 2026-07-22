@@ -10,7 +10,7 @@ const icons = {
 // リンクを追加したいときは、この配列に1行足すだけでOKです（iconはicons一覧のキー名）
 const links = [
   { name: "YouTube", url: "https://www.youtube.com/@uletan442", icon: icons.youtube },
-  { name: "Twitter", url: "https://x.com/home", icon: icons.x },
+  { name: "Twitter", url: "https://x.com/ulletan", icon: icons.x },
   { name: "Bluesky", url: "https://bsky.app/profile/ulletan.bsky.social", icon: icons.bluesky },
   { name: "note", url: "https://note.com/ulletan13", icon: icons.note },
   { name: "マシュマロ", url: "https://marshmallow-qa.com/j02t429puzsvyyt?t=NflJNi&utm_medium=url_text&utm_source=promotion", icon: icons.marshmallow },
